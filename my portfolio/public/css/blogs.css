@@ -1,0 +1,47 @@
+*{
+    font-weight: 100;
+}
+.container{
+    overflow: auto;
+    display: flex;
+    height: 100vh;
+}
+#i2{
+    margin: 10px;
+    position: absolute;
+    font-size: 30px;
+    width: 40px;
+    display: none;
+    background-color: blue;
+    color: orange;
+    border: none;
+}
+.main{
+    overflow: auto;
+    width: 85vw;
+    background-color: orange;
+    font-family: 'Tilt Warp', cursive;
+    height: 100vh;
+}
+.blogs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.blogitem{
+    margin-top: 2vh;
+    width: 80vw;
+    border: 2px solid;
+    padding: 1vh;
+}
+@media (max-width: 1350px){
+    .main{
+        width: 100vw;
+    }
+    .sidebar{
+        position: absolute;
+    }
+    #i2{
+        display: block;
+    }
+}

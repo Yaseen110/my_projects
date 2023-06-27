@@ -1,0 +1,52 @@
+.container{
+    overflow: auto;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+.main{
+    overflow: auto;
+    height: 100vh;
+    min-width: 45vw;
+    width: 85vw;
+    background-color: orange;
+    font-family: 'Tilt Warp', cursive;
+    display: flex;
+    flex-direction: column;
+}
+#i2{
+    margin: 10px;
+    /* position: absolute; */
+    font-size: 30px;
+    width: 40px;
+    display: none;
+    background-color: blue;
+    color: orange;
+    border: none;
+}
+img{
+    width: inherit;
+    align-self: center;
+    margin-top: auto;
+}
+.main a{
+    align-self: center;
+    margin-bottom: auto;
+    font-size: 30px;
+    text-decoration: none;
+}
+.main a:hover{
+    background-color: blue;
+    color: orange;
+}
+@media (max-width: 1350px){
+    .main{
+        width: 100vw;
+    }
+    .sidebar{
+        position: absolute;
+    }
+    #i2{
+        display: block;
+    }
+}

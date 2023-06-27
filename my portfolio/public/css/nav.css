@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&family=Pacifico&family=Redressed&family=Tilt+Warp&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html,body{
+    overflow: auto;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+}
+.cont{
+    margin-top: 10px;
+    display: flex;
+}
+.cont i{
+    font-size: 15px;
+}
+.cont button{
+    margin-right: 1vw;
+    height: 20px;
+    width: 20px;
+}
+#i{
+    background-color: blue;
+    font-family: 'Tilt Warp', cursive;
+    color: orange;
+    font-size: 20px;
+    border: none;
+    align-self: baseline;
+}
+.sidebar{
+    overflow: auto;
+    height: 100vh;
+    width: 15vw;
+    background-color: blue;
+    font-family: 'Tilt Warp', cursive;
+    color: orange;
+    font-size: 26px;
+    transition: transform 0.3s ease-in;
+}
+.sidebar p{
+    margin-left: 10px;
+}
+.sidebar nav{
+    padding-left: 2vw;
+}
+.sidebar nav li{
+    list-style: none;
+    padding-top: 4vw;
+}
+.sidebar nav li a{
+    text-decoration: none;
+    color: orange;
+}
+.sidebar nav li a:hover{
+    text-decoration: underline;
+}
+@media (max-width: 1350px){
+    .sidebar{
+        transform: translate(-50vw,0px);
+        position: absolute;
+        font-size: 4vw;
+        width: 50vw;
+    }
+    .cont{
+        flex-direction: column-reverse;
+    }
+    .sidebar2{
+        transform: translate(0px,0px);
+        position: absolute;
+    }
+}

@@ -1,0 +1,58 @@
+*{
+    font-weight: 100;
+}
+.container{
+    overflow: auto;
+    display: flex;
+    height: 100vh;
+}
+.main{
+    overflow: auto;
+    width: 85vw;
+    display: flex;
+    flex-direction: column;
+    background-color: orange;
+    font-family: 'Tilt Warp', cursive;
+    height: 100vh;
+}
+.main div{
+    margin-top: 1vh;
+}
+.skillcontainer ul{
+    list-style: none;
+    margin-left: 2vw;
+}
+.skillcontainer ul div{
+    margin-top: 0vh;
+    margin-right: 0.5vw;
+    display: inline-block;
+}
+#i2{
+    margin: 10px;
+    /* position: absolute; */
+    font-size: 30px;
+    width: 40px;
+    display: none;
+    background-color: blue;
+    color: orange;
+    border: none;
+}
+.skills{
+    display: flex;
+}
+.skillitem{
+    width: 2vw;
+    height: 15px;
+    background-color: green;
+}
+@media (max-width: 1350px){
+    .main{
+        width: 100vw;
+    }
+    .sidebar{
+        position: absolute;
+    }
+    #i2{
+        display: block;
+    }
+}

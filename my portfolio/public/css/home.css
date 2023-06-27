@@ -1,0 +1,129 @@
+.container{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+.main{
+    min-width: 45vw;
+    width: 80vw;
+    background-color: orange;
+    font-family: 'Tilt Warp', cursive;
+    display: flex;
+    flex-direction: column;
+}
+#i2{
+    margin: 10px;
+    position: absolute;
+    font-size: 30px;
+    width: 40px;
+    display: none;
+}
+.signin{
+    width: 5vw;
+    min-width: 60px;
+    background-color: orange;
+}
+.signin button{
+    margin-top: 2vh;
+    margin-left: -77px;
+    height: 27px;
+    width: 65px;
+}
+#b4{
+    margin-left: 0px;
+}
+html button{
+    background-color: blue;
+    color: orange;
+    border: none;
+}
+.infocontainer{
+    /* background-color: brown; */
+    min-height: 450px;
+    max-height: 700px;
+    max-width: 900px;
+    margin:auto;
+    display: flex;
+    justify-content: space-around;
+    border: 4px;
+    padding: 10px;
+    border-style: solid;
+}
+.devpic{
+    margin-left: -113px;
+    max-height: 350px;
+    width: 310px;
+    /* border: 3px;
+    border-style: solid;
+    border-radius: 10vh; */
+    overflow: hidden; 
+    /* background-color: aquamarine; */
+    /* border-color: chartreuse; */
+}
+.devpic img{
+    margin-left: -185px;
+    margin-top: -175px;
+    height: 1110px;
+    width: 740px;
+}
+.devinfo{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+}
+.hello{
+    font-size: 46px;
+    word-wrap: break-word;
+}
+.skill{
+    font-size: 27px;
+    margin-bottom: 0.4vh;
+}
+.desc{
+    font-size: 23px;
+    margin-top: 1.5vh;
+    font-style: italic;
+}
+#b1,#b2{
+    margin-top: 1.5vh;
+    height: 27px;
+    width: 82px;
+    margin-right: 1.5vh;
+    border-radius: 2vh;
+}
+@keyframes example {
+    from {}
+    to {height: 30px;
+        width: 70px;
+        border-radius: 0vh;}
+  }
+#b1:hover,#b2:hover{
+    animation: example 0.5s;
+    animation-fill-mode: forwards; /* to stop the animation */
+}
+@media (max-width: 1350px){
+    .signin{
+        width: 5vw;
+    }
+    .main{
+        width: 95vw;
+    }
+    #i2{
+        display: block;
+    }
+}
+@media (max-width: 900px){
+    .devpic{
+        max-height: 250px;
+    }
+    .devpic img {
+        height: 550px;
+        width: 370px;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+    .infocontainer{
+        flex-direction: column-reverse;
+    }
+}
