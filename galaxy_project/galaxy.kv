@@ -1,0 +1,20 @@
+#:kivy 1.8.0
+#: import menu menu
+MainWidget:
+<MainWidget>:
+    menu_widget:menu_widget
+    perspective_point_x:self.width/2
+    perspective_point_y:self.height*0.75
+    canvas.before:
+        Rectangle:
+            size:self.size
+            source:root.bg
+    MenuWidget:
+        id:menu_widget
+    Label:
+    # ye jo hai menu ke upar dikhega isliye jab menu ki opacity 1 bhi hogi tab bhi value dikhegi 
+        font_name:"RESOURCES/fonts/Eurostile.ttf"
+        font_size:"25dp"
+        text:"Score:"+str(root.score)
+        pos_hint:{"center_x":0.1,"center_y":0.9}
+        size_hint:(0.3,0.3)
