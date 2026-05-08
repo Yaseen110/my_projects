@@ -1,0 +1,7 @@
+flask
+gunicorn
+os
+opencv-python
+numpy
+flask_cors
+werkzeug
